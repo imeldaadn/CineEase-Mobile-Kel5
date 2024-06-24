@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_theater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="5dp"
+        android:paddingVertical="15dp"
+        android:gravity="start|center_vertical"
+        android:text="Kelola Inventaris"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:drawableTint="@color/white"
+        android:textColor="@color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_pos"
+        app:strokeColor="@color/red"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>

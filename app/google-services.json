@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "480818515576",
+    "project_id": "cineease-ddd81",
+    "storage_bucket": "cineease-ddd81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480818515576:android:b5eba4ebbc4a34ee67e78d",
+        "android_client_info": {
+          "package_name": "com.example.cineease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN-_gucquYLiARrAnkqqjkbifnlTyP5gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

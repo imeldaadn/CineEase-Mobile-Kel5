@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".pos.snack.AddSnackActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/btn_back"
+            layout="@layout/layout_back_button" />
+
+        <TextView
+            android:id="@+id/tv_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="ADD SNACK"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tambah"
+            android:textColor="@color/white"
+            app:backgroundTint="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_snack"
+            app:strokeColor="@color/red"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_nama_paket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintTop_toBottomOf="@id/btn_tambah">
+
+            <EditText
+                android:id="@+id/et_nama_paket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Paket" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_isi_paket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintTop_toBottomOf="@id/tl_nama_paket">
+
+            <EditText
+                android:id="@+id/et_isi_paket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="Isi Paket (Pisahkan dengan enter)"
+                android:inputType="textMultiLine"
+                android:minHeight="90dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintTop_toBottomOf="@id/tl_isi_paket">
+
+            <EditText
+                android:id="@+id/et_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Harga Paket"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tl_harga" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/movies"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/snackFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_popcorn"
+        android:title="@string/snack"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/posFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_pos"
+        android:title="@string/pos"
+        app:showAsAction="ifRoom" />
+</menu>
